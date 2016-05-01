@@ -1,3 +1,0 @@
-• We would've liked some notes on the challenges of generating Python
-  (e.g. dealing with scope)
-• Did you need to compute extra information for generating Python?
