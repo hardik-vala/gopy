@@ -1,10 +1,12 @@
-# COMP 520 Project, Group 5 a.k.a. The Heapsters
+# gopy
+
+GoLite (subset of Go) to Python compiler (COMP 520 Project).
 
 ## Project Members
 
-* Long, Teng (260616355)
-* Macdonald, Ethan (260517273)
-* Vala, Hardik (260309392)
+* Long, Teng
+* Macdonald, Ethan
+* Vala, Hardik
 
 ## Requirements
 
