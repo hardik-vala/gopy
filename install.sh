@@ -44,9 +44,9 @@ if [ ! -d $CLI_FNAME ]
 then
 	echo -e "${YELLOW}Installing Apache Commons CLI...${RESET}\n\n"
 
-	curl -L http://apache.mirror.vexxhost.com//commons/cli/binaries/commons-cli-1.3.1-bin.zip > commons-cli-1.3.1-bin.zip
+	curl -L http://mirror.csclub.uwaterloo.ca/apache//commons/cli/binaries/commons-cli-1.3.1-bin.zip > commons-cli-1.3.1-bin.zip
 	unzip commons-cli-1.3.1-bin.zip
-	mv commons-cli-1.3.1/commons-cli-1.3.1.jar jars/$CLI_FNAME
+	mv commons-cli-1.3.1/commons-cli-1.3.1.jar lib/$CLI_FNAME
 
 	rm -rf commons-cli-1.3.1 commons-cli-1.3.1-bin.zip
 
@@ -54,31 +54,31 @@ then
 fi
 
 # Install JUnit if not already done so.
-if [ ! -f "jars/$JUNIT_FNAME" ]
+if [ ! -f "lib/$JUNIT_FNAME" ]
 then
 	echo -e "${YELLOW}Installing JUnit...${RESET}\n\n"
 
-	curl -L http://search.maven.org/remotecontent\?filepath\=junit/junit/4.12/junit-4.12.jar > jars/$JUNIT_FNAME
+	curl -L http://search.maven.org/remotecontent\?filepath\=junit/junit/4.12/junit-4.12.jar > lib/$JUNIT_FNAME
 
 	installed_nothing=false
 fi
 
 # Install Hamcrest Core if not already done so.
-if [ ! -f "jars/$HAMCREST_FNAME" ]
+if [ ! -f "lib/$HAMCREST_FNAME" ]
 then
 	echo -e "${YELLOW}Installing Hamcrest Core...${RESET}\n\n"
 
-	curl -L http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar > jars/$HAMCREST_FNAME
+	curl -L http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar > lib/$HAMCREST_FNAME
 
 	installed_nothing=false
 fi
 
 # Install AssertJ if not already done so.
-if [ ! -f "jars/$ASSERTJ_FNAME" ]
+if [ ! -f "lib/$ASSERTJ_FNAME" ]
 then
 	echo -e "${YELLOW}Installing AssertJ...${RESET}\n\n"
 
-	curl -L http://search.maven.org/remotecontent?filepath=org/assertj/assertj-core/3.3.0/assertj-core-3.3.0.jar > jars/$ASSERTJ_FNAME
+	curl -L http://search.maven.org/remotecontent?filepath=org/assertj/assertj-core/3.3.0/assertj-core-3.3.0.jar > lib/$ASSERTJ_FNAME
 
 	installed_nothing=false
 fi

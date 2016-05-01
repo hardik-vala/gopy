@@ -47,4 +47,4 @@ then
 	exit -1
 fi
 
-java -cp jars/commons-cli-1.3.1.jar: golite.Main -$OPT $SAFE_FLAG $PROG_PATH
+java -cp ../lib/commons-cli-1.3.1.jar: golite.Main -$OPT $SAFE_FLAG $PROG_PATH

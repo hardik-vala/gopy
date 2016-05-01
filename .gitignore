@@ -5,7 +5,7 @@
 .DS_Store
 
 # JAR files
-src/jars/*.jar
+lib/*.jar
 
 # SableCC 3 generated classes
 src/golite/analysis/
@@ -14,7 +14,7 @@ src/golite/node/
 src/golite/parser/
 
 # SableCC 3 Source Code
-src/sablecc-3.7
+sablecc-3.7/
 
 # Output pretty-print file
 src/.pretty.go
