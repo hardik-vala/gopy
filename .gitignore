@@ -21,6 +21,3 @@ src/.pretty.go
 
 # Auto-generated tests folder
 src/test/
-
-# Ethan's ignore folder
-./ignore_these/
